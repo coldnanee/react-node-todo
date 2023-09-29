@@ -1,0 +1,14 @@
+.root {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    &__avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    &__nickname {
+        font-weight: 600;
+        color: #363636;
+    }
+}

@@ -1,0 +1,16 @@
+.root {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 7px 0;
+    span {
+        width: 11px;
+        height: 11px;
+        display: block;
+    }
+    p {
+        text-transform: capitalize;
+        color: #000;
+        font-weight: 600;
+    }
+}

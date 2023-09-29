@@ -1,0 +1,23 @@
+$border-line-color: #e0e0e0;
+$border-line-size: 2px;
+
+.root {
+    background: #f8f8f8;
+    & > div,
+    section {
+        position: relative;
+        padding: 15px;
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: $border-line-size;
+            background: $border-line-color;
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+}
