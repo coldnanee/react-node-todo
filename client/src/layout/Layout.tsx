@@ -10,7 +10,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 			<Aside />
 			<div className={styles.root__body}>
 				<Header />
-				{children}
+				<div className={styles.root__body__wrapper}>{children}</div>
 			</div>
 		</div>
 	);

@@ -1,3 +1,11 @@
 .root {
     padding: 15px 0 !important;
+    &__title {
+        padding: 0 15px;
+        color: #adadad;
+        font-size: 15px;
+    }
+    &__body {
+        padding: 10px 0;
+    }
 }

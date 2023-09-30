@@ -6,5 +6,9 @@
     }
     &__body {
         flex: 0 1 85%;
+        &__wrapper {
+            padding: 30px;
+            padding-bottom: 0;
+        }
     }
 }
