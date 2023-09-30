@@ -6,7 +6,11 @@ export const favouritesOptionsArr: TFavouritesItem[] = [
 		name: "test"
 	},
 	{
-		background: "#245111",
+		background: "#DC143C",
 		name: "sun"
+	},
+	{
+		background: "#00FFFF",
+		name: "example"
 	}
 ];

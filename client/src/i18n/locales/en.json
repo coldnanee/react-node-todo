@@ -1,0 +1,14 @@
+{
+    "aside": {
+        "Home": "Home",
+        "Projects": "Projects",
+        "Schedule": "Schedule",
+        "General": "General",
+        "Settings": "Settings",
+        "Support": "Support",
+        "Favourites": "Favourites"
+    },
+    "search": {
+        "Placeholder": "Search by name, label, task..."
+    }
+}

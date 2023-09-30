@@ -4,6 +4,8 @@ import { TOptionsItem } from "../../types";
 
 import { OptionsItem } from "../options-item/OptionsItem";
 
+import { useTranslation } from "react-i18next";
+
 export const OptionsList = ({
 	list,
 	title
@@ -11,9 +13,11 @@ export const OptionsList = ({
 	list: TOptionsItem[];
 	title?: string;
 }) => {
+	const { t } = useTranslation();
+
 	return (
 		<section className={styles.root}>
-			<h3 className={styles.root__title}>{title}</h3>
+			{title && <h3 className={styles.root__title}>{t(`aside.${title}`)}</h3>}
 			<ul className={styles.root__body}>
 				{list.map((option) => (
 					<OptionsItem

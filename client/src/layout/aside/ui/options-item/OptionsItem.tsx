@@ -6,12 +6,16 @@ import styles from "./OptionsItem.module.scss";
 
 import { Link } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 export const OptionsItem = ({
 	option: { Icon, label, path }
 }: {
 	option: TOptionsItem;
 }) => {
 	const { pathname } = useLocation();
+
+	const { t } = useTranslation();
 
 	const isPathActive = pathname === path;
 
@@ -27,7 +31,7 @@ export const OptionsItem = ({
 				to={path}
 				className={rootStyles.join(" ")}>
 				<Icon style={{ color: isPathActive ? "#0e131f" : "#BCBCBE" }} />
-				<p>{label}</p>
+				<p>{t(`aside.${label}`)}</p>
 			</Link>
 		</li>
 	);

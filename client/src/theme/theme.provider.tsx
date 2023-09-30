@@ -23,6 +23,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 
 	useEffect(() => {
 		document.body.setAttribute("data-theme", activeTheme);
+		localStorage.setItem("theme", activeTheme);
 	}, [activeTheme]);
 
 	return (
