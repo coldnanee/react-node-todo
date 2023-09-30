@@ -1,0 +1,13 @@
+.root {
+    width: 250px;
+    background: none;
+    padding: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+    &[type="text"]:not(:placeholder-shown) {
+        letter-spacing: 1px;
+    }
+    &[type="password"]:not(:placeholder-shown) {
+        letter-spacing: 2px;
+    }
+}

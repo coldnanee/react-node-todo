@@ -8,3 +8,9 @@ body {
 #root {
     height: 100%;
 }
+
+body[data-theme="light"] {
+}
+
+body[data-theme="dark"] {
+}

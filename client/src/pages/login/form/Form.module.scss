@@ -1,0 +1,17 @@
+// $border-line-color: #e0e0e0;
+// background: #f8f8f8;
+
+.root {
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    min-height: 100dvh;
+    justify-content: center;
+    &__body {
+        &__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
