@@ -1,8 +1,5 @@
-$border-line-color: #e0e0e0;
-$border-line-size: 2px;
-
 .root {
-    background: #f8f8f8;
+    background: var(--bg-aside);
     & > div,
     section {
         position: relative;
@@ -12,8 +9,8 @@ $border-line-size: 2px;
             left: 0;
             content: "";
             width: 100%;
-            height: $border-line-size;
-            background: $border-line-color;
+            height: 0.1px;
+            background: var(--aside-border-color);
         }
         &:last-child::after {
             display: none;

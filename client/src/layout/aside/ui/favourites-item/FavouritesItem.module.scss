@@ -4,12 +4,14 @@
     column-gap: 5px;
     padding: 7px 0;
     span {
-        width: 11px;
-        height: 11px;
+        width: 9px;
+        height: 9px;
         display: block;
     }
     p {
+        font-weight: 600;
         text-transform: capitalize;
-        color: #000;
+        color: var(--favourites-text-color);
+        font-size: 12px;
     }
 }

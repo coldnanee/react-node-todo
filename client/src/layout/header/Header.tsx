@@ -21,7 +21,7 @@ export const Header = () => {
 		<header className={styles.root}>
 			<IconContext.Provider
 				value={{
-					color: "#BBBBBD"
+					color: isDarkThemeActive ? "#6c737c" : "#BBBBBD"
 				}}>
 				<Search />
 				<div className={styles.root__profile}>

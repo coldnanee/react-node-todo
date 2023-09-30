@@ -5,6 +5,7 @@
         flex: 0 1 15%;
     }
     &__body {
+        background: var(--bg-color);
         flex: 0 1 85%;
         &__wrapper {
             padding: 30px;

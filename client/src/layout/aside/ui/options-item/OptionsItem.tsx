@@ -1,5 +1,7 @@
 import { TOptionsItem } from "../../types";
 
+import { useThemeContext } from "../../../../theme/useThemeContext";
+
 import { useLocation } from "react-router-dom";
 
 import styles from "./OptionsItem.module.scss";
@@ -13,6 +15,8 @@ export const OptionsItem = ({
 }: {
 	option: TOptionsItem;
 }) => {
+	const { activeTheme } = useThemeContext();
+
 	const { pathname } = useLocation();
 
 	const { t } = useTranslation();
@@ -30,7 +34,15 @@ export const OptionsItem = ({
 			<Link
 				to={path}
 				className={rootStyles.join(" ")}>
-				<Icon style={{ color: isPathActive ? "#0e131f" : "#BCBCBE" }} />
+				<Icon
+					style={{
+						color: isPathActive
+							? activeTheme === "light"
+								? "#0e131f"
+								: "#fffdfd"
+							: "#6c737c"
+					}}
+				/>
 				<p>{t(`aside.${label}`)}</p>
 			</Link>
 		</li>

@@ -2,13 +2,13 @@
     flex: 0 1 85%;
     position: relative;
     &__input {
-        background: #f5f6f8;
+        background: var(--bg-aside);
         padding: 10px;
         padding-left: 36px;
         border-radius: 5px;
         width: 100%;
         &::placeholder {
-            color: #c1c5ca;
+            color: var(--search-placeholder-color);
         }
     }
     &__image {

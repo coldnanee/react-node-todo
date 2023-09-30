@@ -1,11 +1,11 @@
 import { TOptionsItem } from "../types";
 
-import { FcSettings } from "react-icons/fc";
+import { IoSettingsSharp } from "react-icons/io5";
 import { BiSupport } from "react-icons/bi";
 
 export const generalOptionsArr: TOptionsItem[] = [
 	{
-		Icon: FcSettings,
+		Icon: IoSettingsSharp,
 		label: "Settings",
 		path: "/settings"
 	},

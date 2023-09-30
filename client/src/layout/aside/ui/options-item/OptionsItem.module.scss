@@ -6,7 +6,7 @@
 
     p {
         font-size: 16px;
-        color: #6d6e71;
+        color: #6c737c;
     }
 }
 .root.active {
@@ -19,10 +19,10 @@
         position: absolute;
         height: 20px;
         width: 3px;
-        background: #0e131f;
+        background: var(--aside-color-active);
     }
     p {
-        color: #0e131f;
+        color: var(--aside-color-active);
         font-weight: 600;
     }
 }

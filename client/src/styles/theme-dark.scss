@@ -1,5 +1,12 @@
 body[data-theme="dark"] {
-    --bg--blocks: #151c24;
-    --content-color: #6c737c;
-    --aside-color-active: #0e131f;
+    --bg-color: #0d1015;
+    --bg-aside: #151c24;
+    --bg-blocks: #151c24;
+
+    --search-placeholder-color: #8a8a8b;
+
+    --favourites-text-color: #aeb4b9;
+
+    --aside-color-active: #fffdfd;
+    --aside-border-color: #6c737c;
 }
