@@ -17,6 +17,9 @@
         "Login": "Login"
     },
     "registration": {
-        "Registration": "Registration"
+        "Registration": "Registration",
+        "email": "email",
+        "password": "password",
+        "confirmPassword": "confirm password"
     }
 }

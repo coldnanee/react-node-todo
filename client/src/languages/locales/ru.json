@@ -17,6 +17,9 @@
         "Login": "Логин"
     },
     "registration": {
-        "Registration": "Регистрация"
+        "Registration": "Регистрация",
+        "email": "почта",
+        "password": "пароль",
+        "confirmPassword": "подтвердите пароль"
     }
 }

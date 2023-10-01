@@ -1,6 +1,6 @@
 import { useFormContext } from "react-hook-form";
 
-import { TLoginForm } from "./types";
+import { TRegistrationForm } from "./types";
 
 import styles from "./Form.module.scss";
 
@@ -10,12 +10,12 @@ import { Input } from "../input/Input";
 
 import { Link } from "react-router-dom";
 
-import { loginFormPlacesArr } from "./form.data";
+import { registrationFormPlacesArr } from "./form.data";
 
 export const Form = () => {
-	const { handleSubmit } = useFormContext<TLoginForm>();
+	const { handleSubmit } = useFormContext<TRegistrationForm>();
 
-	const onSubmit = (data: TLoginForm) => {
+	const onSubmit = (data: TRegistrationForm) => {
 		console.log(data);
 	};
 
@@ -26,7 +26,7 @@ export const Form = () => {
 				<form
 					onSubmit={handleSubmit(onSubmit)}
 					className={styles.root__body__form}>
-					{loginFormPlacesArr.map((item) => (
+					{registrationFormPlacesArr.map((item) => (
 						<Input
 							{...item}
 							key={item.name}
@@ -35,8 +35,8 @@ export const Form = () => {
 					<Button />
 					<Link
 						className={styles.root__body__link}
-						to="/registration">
-						Registration
+						to="/login">
+						Login
 					</Link>
 				</form>
 			</div>
