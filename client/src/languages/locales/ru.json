@@ -10,5 +10,13 @@
     },
     "search": {
         "Placeholder": "Поиск по названию, ярлыку, задаче..."
+    },
+    "login": {
+        "password": "пароль",
+        "email": "почта",
+        "Login": "Логин"
+    },
+    "registration": {
+        "Registration": "Регистрация"
     }
 }

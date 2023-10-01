@@ -1,5 +1,9 @@
 import styles from "./Button.module.scss";
 
+import { useTranslation } from "react-i18next";
+
 export const Button = () => {
-	return <button className={styles.root}>Login</button>;
+	const { t } = useTranslation();
+
+	return <button className={styles.root}>{t("login.Login")}</button>;
 };

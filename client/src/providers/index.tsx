@@ -1,12 +1,15 @@
 import { ReactNode } from "react";
 
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "../theme/theme.provider";
+import { ThemeProvider } from "../theme/ThemeProvider";
+import { LanguageProvider } from "../languages/context/LanguageProvider";
 
 const Providers = ({ children }: { children: ReactNode }) => {
 	return (
 		<BrowserRouter>
-			<ThemeProvider>{children}</ThemeProvider>
+			<ThemeProvider>
+				<LanguageProvider>{children}</LanguageProvider>
+			</ThemeProvider>
 		</BrowserRouter>
 	);
 };

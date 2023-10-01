@@ -2,7 +2,7 @@
 // background: #f8f8f8;
 
 .root {
-    background: #f8f8f8;
+    background: var(--bg-aside);
     display: flex;
     align-items: center;
     min-height: 100dvh;

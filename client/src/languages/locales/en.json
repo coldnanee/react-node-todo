@@ -10,5 +10,13 @@
     },
     "search": {
         "Placeholder": "Search by name, label, task..."
+    },
+    "login": {
+        "password": "password",
+        "email": "email",
+        "Login": "Login"
+    },
+    "registration": {
+        "Registration": "Registration"
     }
 }

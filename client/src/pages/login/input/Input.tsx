@@ -4,6 +4,8 @@ import { TLoginFormPlaces } from "../form/types";
 
 import { TLoginForm } from "../form/types";
 
+import { useTranslation } from "react-i18next";
+
 import { useFormContext } from "react-hook-form";
 
 export const Input = ({
@@ -15,13 +17,15 @@ export const Input = ({
 }) => {
 	const { register } = useFormContext<TLoginForm>();
 
+	const { t } = useTranslation();
+
 	return (
 		<input
 			spellCheck="false"
 			type={type}
 			className={styles.root}
 			{...register(name)}
-			placeholder={name}
+			placeholder={t(`login.${name}`)}
 		/>
 	);
 };

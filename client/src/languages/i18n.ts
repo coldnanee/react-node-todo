@@ -4,6 +4,11 @@ import { initReactI18next } from "react-i18next";
 import enLocale from "./locales/en.json";
 import ruLocale from "./locales/ru.json";
 
+export const languages = {
+	en: "en",
+	ru: "ru"
+};
+
 const resources = {
 	en: {
 		translation: enLocale
@@ -20,7 +25,5 @@ i18n.use(initReactI18next).init({
 		escapeValue: false
 	}
 });
-
-export const changeLanguage = i18n.changeLanguage();
 
 export default i18n;

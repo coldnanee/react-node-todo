@@ -9,10 +9,13 @@ import { Search } from "./search/Search";
 
 import { IconContext } from "react-icons";
 
-import { AiOutlineBell } from "react-icons/ai";
+import { useLanguageContext } from "../../languages/context/useLanguageContext";
+import { languages } from "../../languages/i18n";
+
 import { BsSun, BsSunFill } from "react-icons/bs";
 
 export const Header = () => {
+	const { activeLanguage, setActiveLanguage } = useLanguageContext();
 	const { activeTheme, setActiveTheme } = useThemeContext();
 
 	const isDarkThemeActive = activeTheme === themes.dark;
@@ -25,7 +28,6 @@ export const Header = () => {
 				}}>
 				<Search />
 				<div className={styles.root__profile}>
-					<AiOutlineBell size={"25px"} />
 					<input
 						className={styles.root__theme__indicator}
 						id="#theme-label"
@@ -48,6 +50,15 @@ export const Header = () => {
 							/>
 						)}
 					</label>
+					<p
+						onClick={() =>
+							setActiveLanguage(
+								activeLanguage === languages.en ? languages.ru : languages.en
+							)
+						}
+						className={styles.root__language}>
+						{activeLanguage}
+					</p>
 					<Account />
 				</div>
 			</IconContext.Provider>

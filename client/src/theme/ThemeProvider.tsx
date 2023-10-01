@@ -1,8 +1,8 @@
-import { ThemeContext } from "./useThemeContext.ts";
+import { ThemeContext } from "./useThemeContext.js";
 
 import { useState, useEffect, ReactNode } from "react";
 
-import { themes } from "./theme.data";
+import { themes } from "./theme.data.js";
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
 	const getActiveTheme = () => {
