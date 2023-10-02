@@ -1,0 +1,28 @@
+.root {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 5px 15px;
+
+    p {
+        font-size: 16px;
+        color: #6c737c;
+    }
+}
+.root.active {
+    position: relative;
+    &::before {
+        content: "";
+        top: 50%;
+        transform: translateY(-50%);
+        left: 3px;
+        position: absolute;
+        height: 20px;
+        width: 3px;
+        background: #0e131f;
+    }
+    p {
+        color: #0e131f;
+        font-weight: 600;
+    }
+}

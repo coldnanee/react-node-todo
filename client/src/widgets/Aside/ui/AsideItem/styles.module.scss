@@ -1,0 +1,12 @@
+.root {
+    padding: 15px 0 !important;
+    position: relative;
+    &__title {
+        padding: 0 15px;
+        color: #6c737c;
+        font-size: 15px;
+    }
+    &__body {
+        padding: 10px 0;
+    }
+}
